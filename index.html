@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTechLife - Sustainable Technology & Eco Innovation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Eco Header with Wave Pattern -->
+    <header class="eco-header">
+        <div class="wave-container">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="0.3" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,122.7C672,96,768,64,864,69.3C960,75,1056,117,1152,128C1248,139,1344,117,1392,106.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg>
+        </div>
+        <nav class="eco-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>GreenTechLife</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-item">Home</a></li>
+                    <li><a href="#articles" class="nav-item">Articles</a></li>
+                    <li><a href="#products" class="nav-item">Eco Products</a></li>
+                    <li><a href="#sustainability" class="nav-item">Sustainability</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero with Parallax -->
+    <section class="hero-parallax" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Sustainable Technology</span>
+                <span class="title-line">for a Greener Tomorrow</span>
+            </h1>
+            <p class="hero-description">Discover eco-friendly innovations, renewable energy solutions, and sustainable living tips that make a difference.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Explore Green Tech</button>
+                <button class="btn-secondary">Join Community</button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <i class="fas fa-tree"></i>
+                <span class="stat-number">50K+</span>
+                <span class="stat-label">Trees Planted</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-solar-panel"></i>
+                <span class="stat-number">30MW</span>
+                <span class="stat-label">Solar Energy</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-recycle"></i>
+                <span class="stat-number">100T</span>
+                <span class="stat-label">Waste Recycled</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories Carousel -->
+    <section class="categories-carousel">
+        <div class="container">
+            <h2 class="section-heading">Explore Green Categories</h2>
+            <div class="category-cards">
+                <div class="cat-card" data-cat="solar">
+                    <i class="fas fa-sun"></i>
+                    <h3>Solar Tech</h3>
+                    <p>Latest in solar innovation</p>
+                </div>
+                <div class="cat-card" data-cat="ev">
+                    <i class="fas fa-charging-station"></i>
+                    <h3>Electric Vehicles</h3>
+                    <p>Future of transportation</p>
+                </div>
+                <div class="cat-card" data-cat="smart">
+                    <i class="fas fa-home"></i>
+                    <h3>Smart Homes</h3>
+                    <p>Energy-efficient living</p>
+                </div>
+                <div class="cat-card" data-cat="recycling">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Recycling Tech</h3>
+                    <p>Waste management solutions</p>
+                </div>
+                <div class="cat-card" data-cat="agriculture">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Agri-Tech</h3>
+                    <p>Sustainable farming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Bar with Filter Tags -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search eco-tech articles...">
+                </div>
+                <div class="filter-tags">
+                    <span class="tag active" data-filter="all">All</span>
+                    <span class="tag" data-filter="solar">Solar</span>
+                    <span class="tag" data-filter="ev">EVs</span>
+                    <span class="tag" data-filter="smart">Smart Home</span>
+                    <span class="tag" data-filter="recycling">Recycling</span>
+                    <span class="tag" data-filter="agriculture">Agriculture</span>
+                    <span class="tag" data-filter="energy">Energy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid with Masonry Layout -->
+    <section id="articles" class="articles-section">
+        <div class="container">
+            <h2 class="section-heading">Latest Green Tech Articles</h2>
+            <div class="masonry-grid" id="articlesGrid">
+                
+                <!-- Article 1 -->
+                <article class="article-card large" data-category="solar" data-date="2025-08-20">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600" alt="Solar Innovation">
+                        <span class="article-badge">Featured</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> Aug 20, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Emma Green</span>
+                        </div>
+                        <h3>Revolutionary Perovskite Solar Cells Achieve 40% Efficiency</h3>
+                        <p>Breakthrough in solar technology promises to make renewable energy more affordable than ever. New tandem cells combine silicon with perovskite layers for unprecedented efficiency.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(1)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 1.2k</span>
+                                <span><i class="far fa-comment"></i> 89</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="ev" data-date="2025-08-05">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600" alt="Electric Vehicle">
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> Aug 5, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Alex Chen</span>
+                        </div>
+                        <h3>Solid-State Batteries: 1000-Mile Range EVs Are Here</h3>
+                        <p>Toyota and QuantumScape deliver on promises with mass production of solid-state batteries offering 10-minute charging and million-mile lifespan.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(2)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 856</span>
+                                <span><i class="far fa-comment"></i> 67</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="smart" data-date="2025-07-22">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Smart Home">
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> Jul 22, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Sarah Mills</span>
+                        </div>
+                        <h3>AI-Powered Homes Cut Energy Usage by 70%</h3>
+                        <p>Machine learning algorithms optimize heating, cooling, and electricity consumption in real-time, saving homeowners thousands annually.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(3)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 623</span>
+                                <span><i class="far fa-comment"></i> 45</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card large" data-category="recycling" data-date="2025-07-10">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600" alt="Ocean Cleanup">
+                        <span class="article-badge">Trending</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> Jul 10, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Ocean Warriors</span>
+                        </div>
+                        <h3>Ocean Cleanup Array Removes 90% of Pacific Garbage Patch</h3>
+                        <p>The revolutionary System 003 has collected over 100,000 tons of plastic from the ocean, turning waste into renewable fuel and recycled products.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(4)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 2.3k</span>
+                                <span><i class="far fa-comment"></i> 156</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="agriculture" data-date="2025-06-28">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600" alt="Vertical Farming">
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> Jun 28, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Dr. James Field</span>
+                        </div>
+                        <h3>Vertical Farms Use 95% Less Water, Feed Millions</h3>
+                        <p>Indoor farming revolution brings fresh produce to urban centers while using fraction of traditional resources.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(5)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 445</span>
+                                <span><i class="far fa-comment"></i> 32</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="climate" data-date="2025-07-28">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600" alt="Carbon Capture">
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> July 28, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Dr. Rachel Martinez</span>
+                        </div>
+                        <h3>Carbon Capture Breakthrough: Atmospheric CO2 Turned into Fuel</h3>
+                        <p>MIT researchers convert atmospheric CO2 directly into synthetic fuel at unprecedented efficiency levels.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(6)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 3.4k</span>
+                                <span><i class="far fa-comment"></i> 89</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="article-card" data-category="biotech" data-date="2025-07-15">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" alt="Quantum Computing">
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> July 15, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Dr. Lisa Wong</span>
+                        </div>
+                        <h3>Quantum Computing Solves Protein Folding for All Known Diseases</h3>
+                        <p>IBM's quantum computer predicts protein folding for 10,000+ disease-related proteins, accelerating drug discovery.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(7)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 4.6k</span>
+                                <span><i class="far fa-comment"></i> 156</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="article-card" data-category="ocean" data-date="2025-06-30">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Ocean Energy">
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> June 30, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Captain James Foster</span>
+                        </div>
+                        <h3>Ocean Thermal Energy: Unlimited Clean Power from Sea</h3>
+                        <p>World's first commercial OTEC plant in Hawaii produces 100MW of continuous clean energy from ocean temperature.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(8)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 2.9k</span>
+                                <span><i class="far fa-comment"></i> 67</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="article-card" data-category="food" data-date="2025-06-15">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1606859191214-25806e8e2423?w=600" alt="Lab-Grown Meat">
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> June 15, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Chef Maria Rodriguez</span>
+                        </div>
+                        <h3>Lab-Grown Meat Reaches Price Parity with Conventional Meat</h3>
+                        <p>Cultivated meat now cost-competitive with conventional meat as major fast-food chains place billion-dollar orders.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(9)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 5.2k</span>
+                                <span><i class="far fa-comment"></i> 203</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 10 -->
+                <article class="article-card large" data-category="space" data-date="2025-05-25">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=600" alt="Space Solar">
+                        <span class="article-badge">Innovation</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span class="meta-date"><i class="far fa-clock"></i> May 25, 2025</span>
+                            <span class="meta-author"><i class="far fa-user"></i> Dr. Sarah Kim</span>
+                        </div>
+                        <h3>Space-Based Solar Power Beams Energy to Earth</h3>
+                        <p>First commercial space solar station successfully beams 100MW of clean energy to Earth via microwave transmission.</p>
+                        <div class="article-footer">
+                            <button class="read-btn" onclick="openArticle(10)">Read More</button>
+                            <div class="article-stats">
+                                <span><i class="far fa-heart"></i> 6.8k</span>
+                                <span><i class="far fa-comment"></i> 342</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <i class="fas fa-plus-circle"></i> Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eco Products Showcase -->
+    <section id="products" class="products-showcase">
+        <div class="container">
+            <h2 class="section-heading">Featured Eco Products</h2>
+            <div class="products-slider">
+                
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400" alt="Solar Power Bank">
+                        <div class="product-overlay">
+                            <span class="eco-score">Eco Score: A+</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Solar Power Bank 50000mAh</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7/5</span>
+                        </div>
+                        <p>Wireless charging with 4 solar panels. Never run out of power outdoors.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$89.99</span>
+                            <button class="product-btn" onclick="openProduct(1)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400" alt="Bamboo Laptop">
+                        <div class="product-overlay">
+                            <span class="eco-score">Eco Score: A</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Bamboo Laptop Stand</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0/5</span>
+                        </div>
+                        <p>100% sustainable bamboo with ergonomic design and cooling ventilation.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$45.00</span>
+                            <button class="product-btn" onclick="openProduct(2)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400" alt="Smart Thermostat">
+                        <div class="product-overlay">
+                            <span class="eco-score">Eco Score: A+</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>EcoSmart Thermostat Pro</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                        <p>AI-learning thermostat saves 40% on energy bills with presence detection.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$199.00</span>
+                            <button class="product-btn" onclick="openProduct(3)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1610792516307-ea5acd9c3b00?w=400" alt="Reusable Bottles">
+                        <div class="product-overlay">
+                            <span class="eco-score">Eco Score: A</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Ocean Bottle - Self Cleaning</h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.6/5</span>
+                        </div>
+                        <p>UV-C purification, keeps drinks cold 24hrs. Made from ocean plastic.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$65.00</span>
+                            <button class="product-btn" onclick="openProduct(4)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Impact Section -->
+    <section id="sustainability" class="impact-section">
+        <div class="container">
+            <h2 class="section-heading">Our Environmental Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Carbon Offset</h3>
+                    <div class="impact-number" data-count="50000">0</div>
+                    <p>Tons of CO2 prevented</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Water Saved</h3>
+                    <div class="impact-number" data-count="2000000">0</div>
+                    <p>Gallons conserved annually</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Clean Energy</h3>
+                    <div class="impact-number" data-count="100">0</div>
+                    <p>GWh renewable power</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <div class="impact-number" data-count="500000">0</div>
+                    <p>Eco-warriors joined</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Timeline -->
+    <section id="about" class="about-timeline">
+        <div class="container">
+            <h2 class="section-heading">Our Green Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2020 - The Beginning</h3>
+                        <p>Started as a small blog to share sustainable living tips and eco-friendly product reviews.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2022 - Community Growth</h3>
+                        <p>Reached 100K readers. Launched green tech product testing lab and sustainability certification program.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2024 - Global Impact</h3>
+                        <p>Partnered with major environmental organizations. Helped plant 50,000 trees worldwide.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2025 - Innovation Hub</h3>
+                        <p>Became leading platform for green technology innovations with 500K+ active community members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Map Background -->
+    <section id="contact" class="contact-eco">
+        <div class="map-overlay"></div>
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info-card">
+                    <h2>Join the Green Revolution</h2>
+                    <p>Connect with us to learn more about sustainable technology and how you can make a difference.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@greentechlife.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) GREEN-01</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Eco Boulevard, Green Valley, CA 90210</span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form-card" id="contactForm">
+                    <h3>Get In Touch</h3>
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="How can we help you go green?" rows="5" required></textarea>
+                    <button type="submit" class="submit-button">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Newsletter -->
+    <footer class="eco-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <i class="fas fa-leaf"></i>
+                            <span>GreenTechLife</span>
+                        </div>
+                        <p>Leading the way to a sustainable future through innovative green technology and eco-conscious living.</p>
+                        <div class="eco-badges">
+                            <img src="https://via.placeholder.com/80x30/4ade80/ffffff?text=Carbon+Neutral" alt="Carbon Neutral">
+                            <img src="https://via.placeholder.com/80x30/3b82f6/ffffff?text=B+Corp" alt="B Corp">
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#articles">Latest Articles</a></li>
+                            <li><a href="#products">Eco Products</a></li>
+                            <li><a href="#sustainability">Impact Report</a></li>
+                            <li><a href="#about">Our Story</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Green Living Guide</a></li>
+                            <li><a href="#">Carbon Calculator</a></li>
+                            <li><a href="#">Sustainability Tips</a></li>
+                            <li><a href="#">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Newsletter</h4>
+                        <p>Get weekly eco-tech updates and tips</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <div class="newsletter-stats">
+                            <i class="fas fa-seedling"></i>
+                            <span>Join 50,000+ eco-warriors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 GreenTechLife. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sustainability Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Article Modal -->
+    <div id="articleModal" class="eco-modal">
+        <div class="modal-dialog">
+            <button class="modal-close">&times;</button>
+            <div id="articleContent"></div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="eco-modal">
+        <div class="modal-dialog">
+            <button class="modal-close">&times;</button>
+            <div id="productContent"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
