@@ -1087,18 +1087,27 @@ const articlesDatabase = {
     }
 };
 
-// Get article ID from URL parameter
-function getArticleId() {
-    const params = new URLSearchParams(window.location.search);
-    return params.get('id') || 1; // Default to article 1 if no ID provided
+// Convert title to URL slug
+function slugify(text) {
+    return String(text).toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
 }
 
-// Load article content
-function loadArticle(articleId) {
-    const article = articlesDatabase[articleId];
-    
+// Find article by slug (from URL title param)
+function getArticleBySlug(slug) {
+    if (!slug) return null;
+    const normalized = slug.toLowerCase().replace(/^-|-$/g, '');
+    for (const id in articlesDatabase) {
+        const article = articlesDatabase[id];
+        if (slugify(article.title) === normalized) return article;
+    }
+    return null;
+}
+
+// Load article content (by article object)
+function loadArticle(article) {
     if (!article) {
-        // Article not found
         document.getElementById('articleContent').innerHTML = '<h2>Article Not Found</h2><p>Sorry, the requested article could not be found.</p>';
         return;
     }
@@ -1151,10 +1160,11 @@ function loadRelatedArticles(relatedIds) {
     relatedIds.forEach(id => {
         const relatedArticle = articlesDatabase[id];
         if (relatedArticle) {
+            const slug = slugify(relatedArticle.title);
             const card = document.createElement('div');
             card.className = 'related-card';
             card.onclick = () => {
-                window.location.href = `article.html?id=${id}`;
+                window.location.href = `article.html?title=${encodeURIComponent(slug)}`;
             };
             
             card.innerHTML = `
@@ -1226,6 +1236,8 @@ document.querySelector('.newsletter-form')?.addEventListener('submit', function(
 
 // Initialize page
 document.addEventListener('DOMContentLoaded', () => {
-    const articleId = getArticleId();
-    loadArticle(articleId);
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get('title');
+    const article = slug ? getArticleBySlug(slug) : (articlesDatabase[1] || Object.values(articlesDatabase)[0]);
+    loadArticle(article);
 });

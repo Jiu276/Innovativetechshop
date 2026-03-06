@@ -686,9 +686,17 @@ const productsData = {
     }
 };
 
-// Show Article Detail - Navigate to article page
-function openArticle(id) {
-    window.location.href = `article.html?id=${id}`;
+// Convert title to URL slug (must match article.js slugify)
+function slugify(text) {
+    return String(text).toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
+}
+
+// Show Article Detail - Navigate to article page by title slug
+function openArticle(title) {
+    const slug = slugify(title);
+    window.location.href = `article.html?title=${encodeURIComponent(slug)}`;
 }
 
 // Show Product Detail
