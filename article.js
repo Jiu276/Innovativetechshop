@@ -1,5 +1,54 @@
 // Article Data
 const articlesDatabase = {
+    13: {
+        title: "FIERÀ Cosmetics' Carefully Curated Collections for Every Skin Tone",
+        category: "Beauty & Wellness",
+        author: "Isabella Martinez",
+        date: "January 23, 2026",
+        image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1200",
+        readTime: "7 min",
+        views: 934,
+        tags: ["Skincare", "FIERÀ", "SkinTone", "Beauty", "Collections"],
+        content: `
+            <p>My cousin’s wedding was in October. I’d bought a “universal” tinted moisturiser the month before—you know the kind, the one that’s supposed to work for everyone. On the day, in every photo, I looked like I’d dipped my face in flour. My mum actually asked if I was feeling ill. I gave up on base products for a while after that.</p>
+            
+            <p>What changed was a friend who has the same annoying olive undertones as me. She’d been using stuff from <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=274646fTrpt5UbTeXRhDiS7irT1ZuWu6HqYWvn6DHscN052FFAWUM7g55vB6IlfQGIyi1DAuy_bN2FeaRIoie&new=https%3A%2F%2Ffieracosmetics.com" target="_blank" rel="noopener">FIERÀ Cosmetics</a> and kept saying I should try their collections—they’re split by skin tone, not just “light, medium, dark.” I was sceptical. I’d heard “we do olive” before. But she sent me the link, I had a slow Sunday, and I actually sat and read how they describe who each range is for. No “neutral beige,” real words like warm olive, golden, cool. I thought, okay, maybe.</p>
+            
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800" alt="Skincare bottles and textures">
+            
+            <h2>The “Find Your Collection” Thing Actually Worked</h2>
+            <p>I’m not usually a quiz person. I skip those “find your perfect…” things. With <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=274646fTrpt5UbTeXRhDiS7irT1ZuWu6HqYWvn6DHscN052FFAWUM7g55vB6IlfQGIyi1DAuy_bN2FeaRIoie&new=https%3A%2F%2Ffieracosmetics.com" target="_blank" rel="noopener">fieracosmetics</a> I was bored enough to click through. They ask about undertone, how your skin behaves, what finish you like. It spat out a collection that’s meant for warm/olive and “light to medium” depth. I ordered the small set—serum, concealer, and the lip-cheek thing—thinking if it was another flop I’d at least have tried.</p>
+            
+            <p>When it arrived, the first thing I did was the concealer under one eye. I didn’t blend it perfectly on purpose. I wanted to see if it would go orange or grey in ten minutes like everything else. It didn’t. It just… sat there looking like my skin. I remember walking into the kitchen and asking my partner, “Does this look weird?” He said he couldn’t tell I had anything on. That’s the bar. That’s all I’d wanted for years.</p>
+            
+            <h2>Not Just Shade—Texture and Finish Too</h2>
+            <p>What I didn’t expect was that the <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=274646fTrpt5UbTeXRhDiS7irT1ZuWu6HqYWvn6DHscN052FFAWUM7g55vB6IlfQGIyi1DAuy_bN2FeaRIoie&new=https%3A%2F%2Ffieracosmetics.com" target="_blank" rel="noopener">FIERÀ</a> stuff felt different on. The serum isn’t sticky. The tint is buildable so I can do “barely there” on lazy days and a bit more when I care. I have combination skin—oily nose, dry patches on my cheeks—and usually one product is wrong for half my face. With this set it’s not perfect perfect (what is?), but I’m not constantly powdering or adding moisture in the wrong places.</p>
+            
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800" alt="Skincare for different skin tones">
+            
+            <p>I looked at the rest of the <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=274646fTrpt5UbTeXRhDiS7irT1ZuWu6HqYWvn6DHscN052FFAWUM7g55vB6IlfQGIyi1DAuy_bN2FeaRIoie&new=https%3A%2F%2Ffieracosmetics.com" target="_blank" rel="noopener">FIERÀ Cosmetics</a> site after that. They’ve got separate collections for deeper skin, fairer skin, different undertones—and the formulas aren’t the same in each. Some are richer, some are lighter. It’s not “one line, 20 shades.” It actually feels curated, which is a word I normally hate in beauty. Here it fit.</p>
+            
+            <h2>What I Use Now (And What I Skip)</h2>
+            <p>Day to day I use their SPF from that same collection—no white cast, which used to be a joke for me—and the concealer. I don’t do full foundation unless I’m going somewhere fancy. The lip-and-cheek tint I use more than I thought I would; it’s one stick and it’s hard to mess up. So my routine isn’t “full <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=274646fTrpt5UbTeXRhDiS7irT1ZuWu6HqYWvn6DHscN052FFAWUM7g55vB6IlfQGIyi1DAuy_bN2FeaRIoie&new=https%3A%2F%2Ffieracosmetics.com" target="_blank" rel="noopener">fieracosmetics</a> everything,” it’s just the bits that solved the problems I had. The rest of my skincare is still a mix of other things.</p>
+            
+            <blockquote>
+                "I wanted to stop mixing three products to get one shade. With our collections we tried to make it so you don’t have to."
+                <cite>- Someone from the <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=274646fTrpt5UbTeXRhDiS7irT1ZuWu6HqYWvn6DHscN052FFAWUM7g55vB6IlfQGIyi1DAuy_bN2FeaRIoie&new=https%3A%2F%2Ffieracosmetics.com" target="_blank" rel="noopener">FIERÀ Cosmetics</a> team (from their site)</cite>
+            </blockquote>
+            
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=800" alt="Natural skincare ingredients">
+            
+            <h2>Honest Bits</h2>
+            <p>The only thing I wasn’t fussed about was one of their lip shades—just personal preference, too pink for me. I stuck with the one that came in my collection and I’m fine. So it’s not “every single product is perfect,” but the core idea—collections that match real skin tones and textures—is what made the difference for me.</p>
+            
+            <p>If you’ve ever been told your shade “isn’t in stock” or you’ve had to mix two foundations to not look grey or orange, it’s worth having a look at how <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=274646fTrpt5UbTeXRhDiS7irT1ZuWu6HqYWvn6DHscN052FFAWUM7g55vB6IlfQGIyi1DAuy_bN2FeaRIoie&new=https%3A%2F%2Ffieracosmetics.com" target="_blank" rel="noopener">FIERÀ</a> have done it. Start with their find-your-collection thing or the small sets so you’re not committing to a full range. I didn’t expect to end up using as much of it as I do, but here we are.</p>
+            
+            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800" alt="Skincare and makeup on a shelf">
+            
+            <p><em>If you’re done with “one shade fits most,” you can check out the collections at <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=274646fTrpt5UbTeXRhDiS7irT1ZuWu6HqYWvn6DHscN052FFAWUM7g55vB6IlfQGIyi1DAuy_bN2FeaRIoie&new=https%3A%2F%2Ffieracosmetics.com" target="_blank" rel="noopener">fieracosmetics.com</a>—and maybe finally get a match that doesn’t need a chemistry degree to mix.</em></p>
+        `,
+        relatedArticles: [11, 12, 3]
+    },
     12: {
         title: "Ticombo: Your Global Platform to Sell Tickets for Events Worldwide",
         category: "Events & Experiences",
