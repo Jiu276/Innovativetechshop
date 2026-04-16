@@ -1,7 +1,7 @@
 // Article Data
 const articlesDatabase = {
     12: {
-        title: "Browse Popular Campervans on Camplify – BigYellow, Wanderlust & Great Escape",
+        title: "Browse Popular Campervans on Camplify - BigYellow, Wanderlust and Great Escape",
         category: "Travel & Adventure",
         author: "Tom Harrison",
         date: "April 7, 2026",
